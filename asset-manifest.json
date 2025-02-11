@@ -1,10 +1,21 @@
 {
   "files": {
-    "main.js": "/aysel-website/static/js/main.7ac2f42c.js",
+    "main.css": "/aysel-website/static/css/main.fb2c70ae.css",
+    "main.js": "/aysel-website/static/js/main.7a6b8d1f.js",
+    "static/media/fa-solid-900.ttf": "/aysel-website/static/media/fa-solid-900.2582b0e4bcf85eceead0.ttf",
+    "static/media/fa-brands-400.ttf": "/aysel-website/static/media/fa-brands-400.1815e00441357e01619e.ttf",
+    "static/media/fa-solid-900.woff2": "/aysel-website/static/media/fa-solid-900.2463b90d9a316e4e5294.woff2",
+    "static/media/fa-brands-400.woff2": "/aysel-website/static/media/fa-brands-400.c210719e60948b211a12.woff2",
+    "static/media/fa-regular-400.ttf": "/aysel-website/static/media/fa-regular-400.914997e1bdfc990d0897.ttf",
+    "static/media/fa-regular-400.woff2": "/aysel-website/static/media/fa-regular-400.89999bdf5d835c012025.woff2",
+    "static/media/fa-v4compatibility.ttf": "/aysel-website/static/media/fa-v4compatibility.da94ef451f4969af06e6.ttf",
+    "static/media/fa-v4compatibility.woff2": "/aysel-website/static/media/fa-v4compatibility.ea8f94e1d22e0d35ccd4.woff2",
     "index.html": "/aysel-website/index.html",
-    "main.7ac2f42c.js.map": "/aysel-website/static/js/main.7ac2f42c.js.map"
+    "main.fb2c70ae.css.map": "/aysel-website/static/css/main.fb2c70ae.css.map",
+    "main.7a6b8d1f.js.map": "/aysel-website/static/js/main.7a6b8d1f.js.map"
   },
   "entrypoints": [
-    "static/js/main.7ac2f42c.js"
+    "static/css/main.fb2c70ae.css",
+    "static/js/main.7a6b8d1f.js"
   ]
 }
