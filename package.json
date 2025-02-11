@@ -2,7 +2,7 @@
   "name": "aysel-website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ayselrizvi.github.io/aysel-website",
+  "homepage": "https://www.ayselrizvi.com/",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.7.2",
     "@fortawesome/fontawesome-svg-core": "^6.7.2",
