@@ -1,9 +1,20 @@
-import React from 'react';
+import React, { useEffect } from 'react';  // ✅ Import useEffect
+import AOS from 'aos';  // ✅ Import AOS
+import 'aos/dist/aos.css';  // ✅ Import AOS styles
 import './App.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
-
 function App() {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration in milliseconds
+      once: true, // Animation happens only once
+    });
+  }, []);
+
+
+
   return (
     <div className="app-container">
       {/* Navigation Bar */}
@@ -31,20 +42,20 @@ function App() {
         </div>
       </header>
 
-{/* About Section */}
-<section id="about" className="about-section full-screen">
-  <div className="about-container">
-    <div className="about-text">
-      <h3 className="section-title">About Me</h3>
-      <p className="section-content">
-        Hi! I'm Aysel Rizvi, a Computer Science student at the University of Houston with a minor in Business Administration & Math.
-      </p>
-    </div>
-    <div className="about-image-container">
-      <img src="profile.jpeg" alt="Aysel Rizvi" className="about-image" />
-    </div>
-  </div>
-</section>
+      {/* About Section with AOS Animation */}
+      <section id="about" className="about-section full-screen">
+        <div className="about-container">
+          <div className="about-text" data-aos="fade-right">
+            <h3 className="section-title">About Me</h3>
+            <p className="section-content">
+              Hi! I'm Aysel Rizvi, a Computer Science student at the University of Houston with a minor in Business Administration & Math.
+            </p>
+          </div>
+          <div className="about-image-container" data-aos="fade-left">
+            <img src="/profile.jpeg" alt="Aysel Rizvi" className="about-image" />
+          </div>
+        </div>
+      </section>
 
 
     {/* Experience Section */}
