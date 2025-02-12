@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
+
 function App() {
   return (
     <div className="app-container">
@@ -30,15 +31,21 @@ function App() {
         </div>
       </header>
 
-      {/* About Section */}
-      <section id="about" className="about-section full-screen">
-        <div className="about-text">
-          <h3 className="section-title">About Me</h3>
-          <p className="section-content">
-            Hi! I'm Aysel Rizvi, a Computer Science student at the University of Houston with a minor in Business Administration & Math.
-          </p>
-        </div>
-      </section>
+{/* About Section */}
+<section id="about" className="about-section full-screen">
+  <div className="about-container">
+    <div className="about-text">
+      <h3 className="section-title">About Me</h3>
+      <p className="section-content">
+        Hi! I'm Aysel Rizvi, a Computer Science student at the University of Houston with a minor in Business Administration & Math.
+      </p>
+    </div>
+    <div className="about-image-container">
+      <img src="profile.jpeg" alt="Aysel Rizvi" className="about-image" />
+    </div>
+  </div>
+</section>
+
 
     {/* Experience Section */}
 <section id="experience" className="experience-section full-screen">
