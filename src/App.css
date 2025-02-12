@@ -303,3 +303,88 @@ section {
         height: 200px;
     }
 }
+
+.experience-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 20px;
+  background-color: #fef2f2;
+}
+
+.experience-container {
+  display: flex;
+  max-width: 1000px;
+  align-items: center;
+  gap: 40px;
+}
+
+.experience-images {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.company-logo {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+.internship-photo {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.experience-text {
+  flex: 2;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: #db2777;
+  font-weight: bold;
+}
+
+.company-name {
+  font-size: 1.2rem;
+  color: #6b7280;
+  margin-bottom: 10px;
+}
+
+.experience-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #374151;
+  margin-bottom: 15px;
+}
+
+.experience-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #374151;
+}
+
+.experience-tech {
+  font-size: 1rem;
+  color: #374151;
+  margin-top: 15px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .experience-container {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .experience-images {
+      order: -1;
+  }
+
+  .internship-photo {
+      width: 100%;
+  }
+}

@@ -58,27 +58,32 @@ function App() {
       </section>
 
 
-    {/* Experience Section */}
-<section id="experience" className="experience-section full-screen">
-  <h3 className="section-title">Experience</h3>
-  <div className="experience-grid">
-    <div className="experience-card">
-      <h4 className="card-title">Software Engineering Intern</h4>
-      <p className="card-subtitle">Intelligent Wellhead Systems · June 2024 - August 2024</p>
-      <p className="card-description">Improved ticket categorization and analyzed 6,000+ tickets using PowerBI and Excel.</p>
+      <section id="experience" className="experience-section">
+  <div className="experience-container">
+    {/* Left Side - Images */}
+    <div className="experience-images">
+      <img src="/IWSlogo.png" alt="Intelligent Wellhead Systems Logo" className="company-logo" />
+      <img src="/fieldpic.JPG" alt="Aysel Rizvi at Internship" className="internship-photo" />
     </div>
-    <div className="experience-card">
-      <h4 className="card-title">Lead Instructor</h4>
-      <p className="card-subtitle">Kumon · May 2023 - August 2023</p>
-      <p className="card-description">Managed 30 students and provided one-on-one feedback to ensure subject mastery.</p>
-    </div>
-    <div className="experience-card">
-      <h4 className="card-title">Academic Tutor</h4>
-      <p className="card-subtitle">ADY Tutoring · August 2021 - August 2023</p>
-      <p className="card-description">Tutored AP subjects and executed SAT programs.</p>
+
+    {/* Right Side - Text */}
+    <div className="experience-text">
+      <h3 className="section-title">Software Engineering Intern</h3>
+      <p className="company-name">Intelligent Wellhead Systems · June 2024 - August 2024</p>
+      <p className="experience-description">
+        During my internship, I worked on enhancing ticket categorization, support efficiency, and cross-functional collaboration.
+      </p>
+      <ul className="experience-list">
+        <li>Improved ticket categorization, leading to quicker issue identification.</li>
+        <li>Resolved support tickets, ensuring timely fixes in the Remote Operational Control Center.</li>
+        <li>Analyzed 6,000+ tickets using Power BI & Excel for roadmap prioritization.</li>
+        <li>Gained cross-functional experience in Sales, Product Marketing, Finance, and Workshop.</li>
+      </ul>
+      <p className="experience-tech"><strong>Technologies Used:</strong> Power Apps, Power BI, Dynamics 365, Excel, SQL</p>
     </div>
   </div>
 </section>
+
 
 
 
