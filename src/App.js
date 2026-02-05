@@ -1,109 +1,116 @@
-import React, { useEffect } from 'react';  // ✅ Import useEffect
-import AOS from 'aos';  // ✅ Import AOS
-import 'aos/dist/aos.css';  // ✅ Import AOS styles
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import './App.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 function App() {
-
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Animation duration in milliseconds
-      once: true, // Animation happens only once
+      duration: 800,
+      once: true,
+      offset: 40,
     });
   }, []);
 
-
-
   return (
     <div className="app-container">
-      {/* Navigation Bar */}
       <nav className="navbar">
-        <h1 className="navbar-title">Aysel Rizvi</h1>
+        <a href="/" className="navbar-title">Aysel Rizvi</a>
         <div className="nav-links">
           <a href="#about" className="nav-link">About</a>
           <a href="#experience" className="nav-link">Experience</a>
-          <a href="#projects" className="nav-link">Projects</a>
           <a href="#contact" className="nav-link">Contact</a>
         </div>
       </nav>
 
-      {/* Header Section */}
-      <header className="header-section full-screen">
-        <h2 className="header-title">Hi, I'm Aysel Rizvi</h2>
-        <p className="header-subtitle">Computer Science Student</p>
-        <div className="social-icons larger-icons">
-          <a href="https://www.linkedin.com/in/aysel-r-a363b1220/" target="_blank" rel="noopener noreferrer">
-            <i className="fab fa-linkedin social-icon"></i>
+      <header className="hero full-screen">
+        <p className="hero-label" data-aos="fade-up">Technology Consultant</p>
+        <h1 className="hero-title" data-aos="fade-up" data-aos-delay="100">
+          Hi, I'm <span className="hero-name">Aysel Rizvi</span>
+        </h1>
+        <p className="hero-subtitle" data-aos="fade-up" data-aos-delay="200">
+          I help organizations solve complex problems with technology at <span className="hero-company">Credera</span> — and I love turning ideas into solutions that matter.
+        </p>
+        <div className="hero-actions" data-aos="fade-up" data-aos-delay="300">
+          <a href="#contact" className="btn btn-primary">Get in touch</a>
+          <a href="https://www.linkedin.com/in/aysel-r-a363b1220/" target="_blank" rel="noopener noreferrer" className="btn btn-ghost" aria-label="LinkedIn">
+            <i className="fab fa-linkedin" />
           </a>
-          <a href="mailto:ayselrizvi@gmail.com">
-            <i className="fas fa-envelope social-icon"></i>
+          <a href="mailto:ayselrizvi@gmail.com" className="btn btn-ghost" aria-label="Email">
+            <i className="fas fa-envelope" />
           </a>
         </div>
       </header>
 
-      {/* About Section with AOS Animation */}
       <section id="about" className="about-section full-screen">
         <div className="about-container">
-          <div className="about-text" data-aos="fade-right">
-            <h3 className="section-title">About Me</h3>
-            <p className="section-content">
-              Hi! I'm Aysel Rizvi, a Computer Science student at the University of Houston with a minor in Business Administration & Math.
-            </p>
-          </div>
-          <div className="about-image-container" data-aos="fade-left">
+          <div className="about-image-wrap" data-aos="fade-right">
             <img src="/profile.jpeg" alt="Aysel Rizvi" className="about-image" />
           </div>
+          <div className="about-content" data-aos="fade-left">
+            <h2 className="section-title">About me</h2>
+            <p className="about-body">
+              I studied Computer Science at the University of Houston, with minors in Business Administration and Math — a mix that taught me how to think technically and communicate clearly. Currently I'm working at Credera as a Technology Consultant, where I collaborate closely with clients to understand their needs, translate business problems into technical solutions, and support teams through delivery.
+            </p>
+            <p className="about-body">
+              When I'm not at my desk, I enjoy exploring new tech, discovering coffee spots around Houston, and spending time with friends. I'm always up for trying something new.
+            </p>
+          </div>
         </div>
       </section>
-
 
       <section id="experience" className="experience-section">
-  <div className="experience-container">
-    {/* Left Side - Images */}
-    <div className="experience-images">
-      <img src="/IWSlogo.png" alt="Intelligent Wellhead Systems Logo" className="company-logo" />
-      <img src="/fieldpic.JPG" alt="Aysel Rizvi at Internship" className="internship-photo" />
-    </div>
+        <h2 className="section-title section-title-centered" data-aos="fade-up">Experience</h2>
+        <div className="experience-grid">
+          <article className="experience-card" data-aos="fade-up" data-aos-delay="0">
+            <div className="experience-card-header">
+              <span className="experience-role">Technology Consultant</span>
+              <span className="experience-company-name">Credera</span>
+              <span className="experience-date">August 2025 – Present</span>
+            </div>
+            <p className="experience-description">
+              Helping clients navigate digital transformation and build solutions that unlock growth. I work across the full lifecycle — from discovery and design through build and delivery — so technology aligns with business goals.
+            </p>
+          </article>
 
-    {/* Right Side - Text */}
-    <div className="experience-text">
-      <h3 className="section-title">Software Engineering Intern</h3>
-      <p className="company-name">Intelligent Wellhead Systems · June 2024 - August 2024</p>
-      <p className="experience-description">
-        During my internship, I worked on enhancing ticket categorization, support efficiency, and cross-functional collaboration.
-      </p>
-      <ul className="experience-list">
-        <li>Improved ticket categorization, leading to quicker issue identification.</li>
-        <li>Resolved support tickets, ensuring timely fixes in the Remote Operational Control Center.</li>
-        <li>Analyzed 6,000+ tickets using Power BI & Excel for roadmap prioritization.</li>
-        <li>Gained cross-functional experience in Sales, Product Marketing, Finance, and Workshop.</li>
-      </ul>
-      <p className="experience-tech"><strong>Technologies Used:</strong> Power Apps, Power BI, Dynamics 365, Excel, SQL</p>
-    </div>
-  </div>
-</section>
-
-
-
-
-      {/* Contact Section */}
-      <section id="contact" className="contact-section full-screen">
-        <h3 className="contact-title">Contact</h3>
-        <p className="contact-subtitle">Feel free to reach out to me!</p>
-        <div className="contact-icons">
-          <a href="mailto:ayselrizvi@gmail.com" target="_blank" rel="noopener noreferrer">
-            <i className="fas fa-envelope contact-icon"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/aysel-r-a363b1220/" target="_blank" rel="noopener noreferrer">
-            <i className="fab fa-linkedin contact-icon"></i>
-          </a>
+          <article className="experience-card" data-aos="fade-up" data-aos-delay="100">
+            <div className="experience-card-header">
+              <span className="experience-role">Software Engineering Intern</span>
+              <span className="experience-date">Jun 2024 – Aug 2024</span>
+            </div>
+            <div className="experience-company-row">
+              <img src="/IWSlogo.png" alt="" className="experience-company-logo" aria-hidden />
+              <span className="experience-company-name">Intelligent Wellhead Systems</span>
+            </div>
+            <div className="experience-photo-wrap">
+              <img src="/fieldpic.JPG" alt="Aysel at IWS" className="internship-photo" />
+            </div>
+          </article>
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="footer-section">
-        <p className="footer-text">&copy; 2025 Aysel Rizvi. All rights reserved.</p>
+      <section id="contact" className="contact-section full-screen">
+        <div className="contact-inner" data-aos="fade-up">
+          <h2 className="section-title">Let's connect</h2>
+          <p className="contact-subtitle">
+            Whether it's a project, a conversation, or just saying hi — I'd love to hear from you.
+          </p>
+          <div className="contact-links">
+            <a href="mailto:ayselrizvi@gmail.com" className="contact-link" aria-label="Email">
+              <i className="fas fa-envelope" />
+              <span>ayselrizvi@gmail.com</span>
+            </a>
+            <a href="https://www.linkedin.com/in/aysel-r-a363b1220/" target="_blank" rel="noopener noreferrer" className="contact-link" aria-label="LinkedIn">
+              <i className="fab fa-linkedin" />
+              <span>LinkedIn</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <footer className="footer">
+        <p className="footer-text">&copy; {new Date().getFullYear()} Aysel Rizvi</p>
       </footer>
     </div>
   );
